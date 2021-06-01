@@ -19,6 +19,11 @@ const Main = () => {
                         <li>
                         <img src="https://www.tirthanvalleystay.com/images/Tree-House/Tree-5.jpg" alt="no image loaded"></img>
                         <img src="https://www.tirthanvalleystay.com/images/callout-bg.jpg" alt="no image loaded"></img>
+                        <img src="https://www.tirthanvalleystay.com/images/photoslider1.jpg" alt="no image loaded"></img>
+                        <img src="https://www.tirthanvalleystay.com/images/Tree-House/Tree-5.jpg" alt="no image loaded"></img>
+                        <img src="https://www.tirthanvalleystay.com/images/callout-bg.jpg" alt="no image loaded"></img>
+                        <img src="https://www.tirthanvalleystay.com/images/photoslider1.jpg" alt="no image loaded"></img>
+                        
                         </li>
                     )
                 })}
