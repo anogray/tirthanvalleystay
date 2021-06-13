@@ -34,7 +34,7 @@ const NavBar = () => {
             <Nav.Link href="/"  style={style.link}>HOME</Nav.Link>
             <Nav.Link href="#pricing" style={style.link}>ABOUT US</Nav.Link>
 
-            <NavDropdown title={"ACTIVITIES"}   >
+            <NavDropdown title={"ACTIVITIES"}  >
                 <NavDropdown.Item href="#action/3.1" style={style.list}>Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>

@@ -1,10 +1,11 @@
-.blogpost{
+/* .blogpost{
     margin-left:10%;
     margin-top:5%
-}
+} */
 
 .card{
     margin-bottom: 5%;
+    width: 75%;
 }
 .by{
     font-size: 13px;
@@ -15,3 +16,24 @@
 .title{
     padding-bottom: 30px;
 }
+
+.blog{
+    display: flex;
+    margin-left:10%;
+    margin-top:5%
+}
+
+.entry-title a{
+    color: #44a64d;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 800px) {
+    .card{
+        width:90%;
+    }
+    .blog{
+        flex-direction: column;
+    }
+  }
