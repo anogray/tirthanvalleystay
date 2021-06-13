@@ -17,6 +17,9 @@
     padding-bottom: 30px;
 }
 
+#tip{
+    color:purple
+}
 .blog{
     display: flex;
     margin-left:10%;

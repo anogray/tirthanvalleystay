@@ -1,6 +1,6 @@
 [
     {
-        "title": "HERE’S WHY TIRTHAN VALLEY IS AN IDEAL HOLIDAY DESTINATION FOR YOUR FAMILY",
+        "title": "HERE’S WHY <a href='#'> Hello all<a/> TIRTHAN VALLEY IS AN IDEAL HOLIDAY DESTINATION FOR YOUR FAMILY",
         "imgURL":"https://www.tirthanvalleystay.com/images/blog-26.jpg",
         "alt":"blog-nature",
         "less": "<p style='color:green'>Tirthan Valley</p> Hello Data",
@@ -97,7 +97,7 @@
         "date":"April 20, 2018"
     },
     {
-        "title": "<a href='5-things-to-know-about-tirthan-valley.php' title='5 Things to Know About Tirthan Valley'>5 Things to Know About Tirthan Valley</a>",
+        "title": "<Link href='5-things-to-know-about-tirthan-valley.php' title='5 Things to Know About Tirthan Valley'>5 Things to Know About Tirthan Valley</Link>",
         "imgURL":"/images/blog/trout-blog.jpg",
         "alt":"blog-nature",
         "less":"<p>Craving for a getaway? Then Tirthan Valley is just the place for you. The things you can do, the places you can explore and the rejuvenation you will get at this beautiful place in Himachal Pradesh will definitely leave you with some happy, lifelong memories.</p>",

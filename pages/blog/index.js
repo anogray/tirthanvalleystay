@@ -10,49 +10,16 @@ import Link from "next/dist/client/link";
  // React.createElement('p', {}, 'Hello, World!')
 
 export default function Blog() {
-    console.log("json",blogData)
   return (
     <>
 
     <NavBar/>
     
     <div  className={styles.blog}>
+    
     {/* <img  src="/images/blog/blogpost-why.png" alt="loading pic" width="50%" height="100%"/> */}
       <div className={styles.blogpost}>
-    {
-        blogData.map((eachBlog)=>(
-        <article className="type-post">
-            <Card className={styles.card}>
-            <div className="entry-cover">
-              
-            </div>
-                <Card.Img variant="top" src={eachBlog.imgURL} alt={eachBlog.alt} />
-                <Card.Body>
-                {/* <Card.Subtitle className={`mb-2 text-muted ${styles.by}`}> {`${eachBlog.author} / ${eachBlog.date}`} </Card.Subtitle> */}
-                {/* <Card.Title className={styles.title}>{eachBlog.title}</Card.Title> */}
-                <div className="entry-meta ">
-								<span className="post-by"><a href="#" title="Author"> {eachBlog.author} /</a></span>
-								<span className="post-date"><a href="#" title="June 26, 2018">  {eachBlog.date}</a></span>
-							</div>
-                <div className="entry-title">
-                <h3>
-                {Parser(eachBlog.title)}
-                </h3>
-                </div>
-                {eachBlog["sub-title"] && <Card.Title className={styles.title}>{eachBlog["sub-title"]}</Card.Title>}
-                {/* <Card.Text className={styles.title}> */}
-                {/* {console.log("parseddd",eachBlog.less, Parser(eachBlog.less))} */}
-                <div className="entry-content">
-                {Parser(eachBlog.less)}
-                </div>
-                {/* </Card.Text> */}
-                <Button variant="primary">Read More</Button>
-                </Card.Body>
-            </Card>
-            </article>
-            )
-        )
-    }
+    
       </div>
    
       <div className="">
