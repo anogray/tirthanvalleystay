@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/dist/client/link";
 import NavBar from "../../components/NavBar";
 import Carousel from "react-bootstrap/Carousel"
 import styled from "../../styles/Blog.module.scss"
@@ -73,7 +74,7 @@ export default function Once() {
                 </Carousel>
                 </div>
                 <div className={styles.blogEnd}>
-                    <p><h4>How to reach Tirthan Valley</h4><br/> The best way to reach Tirthan Valley, especially from Delhi, is to come via road. You will end up enjoying the views on your way and the drive will turn out more beautiful than you imagined. You can also take a train up to Kiratpur and then book a cab to reach Tirthan Valler. Those who prefer air travel can come till Bhuntar which is 2 hours drive from Tirthan valley. So, if you have already starting searching Google to plan your Tirthan Valley vacation, the easiest way to do is just visit www.tirthanvalleystay.com or whats app: +91-9888334809 It is here you will find best ideas, stay options and touristy guidelines for Tirthan Valley.</p>
+                    <p style={{"text-align":"justify"}}><h4>How to reach Tirthan Valley</h4><br/> The best way to reach Tirthan Valley, especially from Delhi, is to come via road. You will end up enjoying the views on your way and the drive will turn out more beautiful than you imagined. You can also take a train up to Kiratpur and then book a cab to reach Tirthan Valler. Those who prefer air travel can come till Bhuntar which is 2 hours drive from Tirthan valley. So, if you have already starting searching Google to plan your Tirthan Valley vacation, the easiest way to do is just visit <Link href="https://www.tirthanvalleystay.com"><span style={{"color": "#71bf44"}}><strong>www.tirthanvalleystay.com</strong></span></Link> or <Link href="https://wa.me/+919888334809"><a><img  style={{"vertical-align": "sub"}} src="/images/logos/whatsapp.png" alt="whatsapp_logo" width="20" height="20"></img></a></Link> <strong>+91-9888334809</strong> It is here you will find best ideas, stay options and touristy guidelines for Tirthan Valley.</p>
                     <img className={styles.imageAuthor} src="/images/blogContent/maj.jpg" alt="blog1"></img>
                     <p className={styles.authorCaption}>Writer – Maj. Gen Krishan Chauhan (Retd)</p>
                 </div>
