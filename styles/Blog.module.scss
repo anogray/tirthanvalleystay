@@ -127,7 +127,7 @@ margin-right: 5%;
         flex-direction: column;
     }
     .eachBlog{
-        width:90%;
+        width:95%;
     }
     .entryTitle{
             h3{
@@ -135,4 +135,11 @@ margin-right: 5%;
                 font-size: 18px;
             }
         }
+
+     .containerblog{
+       display: flex;
+       margin-left:5%;
+       margin-top:5%
+    }
+
   }
