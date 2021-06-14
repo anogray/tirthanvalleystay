@@ -1,0 +1,88 @@
+.heading{
+    margin-top: 5%;
+}
+
+.contentFlexl{
+    display: flex;
+    margin-bottom: 5%;
+}
+.contentFlexr{
+    display: flex;
+    margin-bottom: 5%;
+}
+.image{
+    width: 50%;
+}
+.pright{
+    margin-left: 5%;
+    text-align: justify;
+}
+.pleft{
+    margin-right: 5%;
+    text-align: justify;
+    
+}
+.carouselDim{
+    width: 50%;
+    height: 500px;
+}
+.blogEnd{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.imageAuthor{
+    width: 250px;
+    height: 300px;
+}
+.authorCaption{
+    font-weight: bold;
+}
+.booknow{
+    text-align: center;
+    button{
+        border: none;
+        padding: 10px;
+        background-color: #71bf44;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (min-width:800px) and (max-width: 1000px) {
+    .image{
+        width: 60%;
+    }
+    .imageAuthor{
+    margin: auto;
+    }
+    .authorCaption{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+.contentFlexl {
+    flex-direction: column;
+}
+.contentFlexr {
+    flex-direction: column-reverse;
+}
+
+    .image{
+        width: 100%;
+    }
+    .pright{
+        margin-left: 0;
+    }
+    .pleft{
+        margin-right: 0;    
+    }
+    .imageAuthor{
+        margin: auto;
+    }
+    .authorCaption{
+        text-align: center;
+    }
+
+}
