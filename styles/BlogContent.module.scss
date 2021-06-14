@@ -59,6 +59,9 @@
     .authorCaption{
         text-align: center;
     }
+    .carouselDim{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -68,21 +71,23 @@
 .contentFlexr {
     flex-direction: column-reverse;
 }
-
-    .image{
-        width: 100%;
-    }
-    .pright{
-        margin-left: 0;
-    }
-    .pleft{
-        margin-right: 0;    
-    }
-    .imageAuthor{
-        margin: auto;
-    }
-    .authorCaption{
-        text-align: center;
-    }
+.image{
+    width: 100%;
+}
+.pright{
+    margin-left: 0;
+}
+.pleft{
+    margin-right: 0;    
+}
+.imageAuthor{
+    margin: auto;
+}
+.authorCaption{
+    text-align: center;
+}
+.carouselDim{
+    width: 100%;
+}
 
 }
