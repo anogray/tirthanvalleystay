@@ -13,6 +13,7 @@
 .image{
     width: 50%;
 }
+
 .pright{
     margin-left: 5%;
     text-align: justify;
@@ -50,24 +51,33 @@
 img .whatsapplogo{
     vertical-align: sub;
 }
-
-
-@media screen and (min-width:800px) and (max-width: 1000px) {
-    .image{
-        width: 60%;
-    }
-    .imageAuthor{
-    margin: auto;
-    }
-    .authorCaption{
-        text-align: center;
-    }
-    .carouselDim{
-        width: 100%;
-    }
+.para h3{
+    color: #44a64d;
+    font-weight: 600;
+    margin-left: 5%;
 }
 
-@media screen and (max-width: 800px) {
+
+// @media screen and (min-width:800px) and (max-width: 1000px) {
+//     .image{
+//         width: 60%;
+//     }
+//     .imageAuthor{
+//     margin: auto;
+//     }
+//     .authorCaption{
+//         text-align: center;
+//     }
+//     .carouselDim{
+//         width: 100%;
+//     }
+//     .pright, .pleft{
+//         font-size: 12px;
+
+//     }
+// }
+
+@media screen and (max-width: 1100px) {
 .contentFlexl {
     flex-direction: column;
 }
@@ -91,6 +101,9 @@ img .whatsapplogo{
 }
 .carouselDim{
     width: 100%;
+}
+.para h3{
+    margin-left: 0%;
 }
 
 }

@@ -91,7 +91,7 @@ export default function Blog() {
           <article className={`${styles.blogPost}`} >
           <div className={styles.eachBlog}>
               <div className="entry-cover">
-              <Link href="/blog/once" ><a><img className={`${styles.blogImg}`} src="/images/blog/blog-do.jpg" alt="blog-nature"/></a>
+              <Link href="/blog/ondos-and-donts-some-guidelines-for-visiting-tirthan-valleyce" ><a><img className={`${styles.blogImg}`} src="/images/blog/blog-do.jpg" alt="blog-nature"/></a>
               </Link>
               </div>
               <div className={styles.entryContentBlock}>
@@ -100,7 +100,7 @@ export default function Blog() {
                   <span className="post-date"><a href="#" title="September, 7 2018"> September, 7 2018</a></span>
                 </div>
                 <div className={styles.entryTitle}>
-                  <h3><Link href="/blog/once" title="Tirthan Valley, A Secluded Paradise">Dos and Donts: Some Guidelines for Visiting Tirthan Valley</Link></h3>
+                  <h3><Link href="/blog/dos-and-donts-some-guidelines-for-visiting-tirthan-valley" title="Tirthan Valley, A Secluded Paradise">Dos and Donts: Some Guidelines for Visiting Tirthan Valley</Link></h3>
                 </div>
                 <div className={styles.deco}></div>
                 <div className={styles.entryContent}>
