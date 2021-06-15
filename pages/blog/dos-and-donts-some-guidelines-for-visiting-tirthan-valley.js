@@ -34,8 +34,8 @@ export default function Once() {
                 </div>
                 <div className={styles.contentFlexl}>
                     <img className={styles.image} src="/images/blogContent/blog-himalaya1.jpg" alt="blog1"></img>
-                    <div className={styles.para}>
-                    <h3 >Why Do We Need to Be Careful While Visiting Tirthan Valley?</h3>
+                    <div className="para">
+                    <h3 className={styles.para}>Why Do We Need to Be Careful While Visiting Tirthan Valley?</h3>
                     <p className={styles.pright}>
                         <p>Tirthan Valley is one of the few untouched places in India which is why it is still pristine and lovely to visit. There aren’t any dams made over the river and the locals take extreme care while interacting with their surroundings. This is why this place still has an abundance of flora and fauna and is home to many amazing wildlife creatures like bears, leopards, fishes, birds, etc.</p>
                         <p>They practice ecotourism here to ensure that the travelers can really, truly enjoy an authentic experience here while protecting the valley at the same time.
@@ -51,7 +51,7 @@ export default function Once() {
                     </p>
                     </div>
                 </div>
-                <div>
+                <div className={styles.alignpara}>
                     <p>Tirthan valley is a place where you can relax and meditate but it is not suitable for people who are looking to just get high. So, don’t come here with the mentality to get high on alcohol or drugs, instead come here to get high on life itself.</p>
                     <h4>Don’t Make a Lot of Noise While Staying in the Valley</h4>
                     <p>A lot of us who have lived in cities our whole lives are not accustomed to the quietness of the mountains. As a result, we often end up making a lot of noise. This can often scare away the fauna here and can also alarm the locals who live here.</p>
@@ -64,6 +64,7 @@ export default function Once() {
                 <div className={styles.contentFlexr}>
                 <div class="entry-cover">	
                     <h4>Don’t Go Alone for Trekking or Adventurous Activities</h4>
+                    <div className={styles.alignpara}>
                     <p>We often think ourselves to be really experienced trekkers or travelers and might feel that solo trekking is a great idea. But, trust me; it is not wise, especially in this part of the valley. Because there are many animals living here, who prowl around the valley. So, you are putting yourself in grave danger when you are trekking or going out alone here.</p>
                     <p>Another reason why you should avoid going off alone is that there isn’t a network signal in a lot of areas. So, if you get injured or stuck somewhere, no one would know how and where to find you. Also, always go in a small group and take a guide with you when going to explore off the area.</p>
                     <h4>Don’t Shout Near the River</h4>
@@ -74,11 +75,12 @@ export default function Once() {
                     <p>So, if you ask them to sell their land to you, it could really upset them.
                     Just enjoy your time in this small, pristine valley and don’t discuss any proposal for buying the land for them.</p>
                     </div>
+                </div>
                     <img className={styles.image} src="/images/blogContent/blog-do-1.jpg" alt="blog1"></img>
                 </div>
                 
-                <div class="entry-content">
-                    <div class="entry-cover">
+                <div className="entry-content">
+                    <div className={styles.alignpara}>
                         <h4>Avoid Playing Loud Music in your Car</h4>
                         <p>
                         Yes, this one is an important point to remember. You might feel that playing music is not really harming anyone, but that is not true. You are disturbing the environment of the valley and also scaring away the animals and the birds which live here. Sure, you can play soft music while driving in the car but there is no need to play discotheque songs at a loud volume while traveling to this place.
