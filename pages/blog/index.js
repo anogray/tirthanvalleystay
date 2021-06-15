@@ -91,7 +91,7 @@ export default function Blog() {
           <article className={`${styles.blogPost}`} >
           <div className={styles.eachBlog}>
               <div className="entry-cover">
-              <Link href="/blog/ondos-and-donts-some-guidelines-for-visiting-tirthan-valleyce" ><a><img className={`${styles.blogImg}`} src="/images/blog/blog-do.jpg" alt="blog-nature"/></a>
+              <Link href="/blog/dos-and-donts-some-guidelines-for-visiting-tirthan-valley" ><a><img className={`${styles.blogImg}`} src="/images/blog/blog-do.jpg" alt="blog-nature"/></a>
               </Link>
               </div>
               <div className={styles.entryContentBlock}>
