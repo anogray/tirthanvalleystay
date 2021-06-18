@@ -4,10 +4,18 @@ import NavBar from "../../components/NavBar";
 import Carousel from "react-bootstrap/Carousel"
 import styled from "../../styles/Blog.module.scss"
 import styles from "../../styles/BlogContent.module.scss"
+import Head from 'next/head'
 
 export default function Once() {
     return (
         <>
+        <Head>
+        <title>Guidelines in Tirthan Valley</title>
+        <meta name="description" content="DOS AND DONTS: SOME GUIDELINES FOR VISITING TIRTHAN VALLEY" />
+        <meta property="og:title" content="TIRTHAN VALLEY BLOGS" />
+        <meta property="og:description" content="Come to my store for great apparel!" />
+        <meta property="og:url" content="https://tirthanvalleystay.vercel.app/" />
+      </Head>
             <NavBar />
             <div className="container blog blogpost">
 
