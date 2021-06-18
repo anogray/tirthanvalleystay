@@ -10,7 +10,7 @@ export default function Once() {
     return (
         <>
         <Head>
-        <title>Guidelines in Tirthan Valley</title>
+        <title>Guidelines in Tirthan Valley https://tirthanvalleystay.vercel.app/ </title>
         <meta name="description" content="DOS AND DONTS: SOME GUIDELINES FOR VISITING TIRTHAN VALLEY" />
         <meta property="og:title" content="TIRTHAN VALLEY BHASKAR" />
         <meta property="og:description" content="Come to my store for great apparel!" />
