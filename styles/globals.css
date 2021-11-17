@@ -18,3 +18,73 @@ a {
 body{
   background-color: #e7f9e773;
 }
+
+/* facilities */
+
+/* .hotels-section-list {
+  display: grid !important;
+  grid-auto-flow: row !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  padding: 20px;
+  grid-auto-rows: minmax(min-content, max-content);
+} */
+
+.hotels-section-list{
+  display: block;
+}
+
+.facility-body{
+  margin-top: 10%;
+}
+.facility-body h4{
+  text-align: center;
+}
+
+.hotel-facilities {
+  /* margin: auto; */
+  /* width: 40%; */
+  /* display: grid; */
+
+
+}
+
+/* place page */
+.place-body{
+  width: 50%;
+    margin: auto;
+}
+
+/* place components */
+
+.place-heading{
+  margin-left: 20px;
+}
+
+/* location img */
+.location-img{
+  width: 100%;
+}
+
+@media screen and (max-width: 900px){
+  .place-body{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .hotels-section-list{
+    font-size: 12px;
+  }
+  .place-heading{
+    margin-left: 30px;
+  }
+  
+.hotels-section-list{
+  grid-template-columns: repeat(1, 1fr) !important;
+  grid-auto-rows: max-content;
+}
+.map-place-location{
+  /* width: 80%; */
+}
+
+}

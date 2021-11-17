@@ -1,0 +1,4 @@
+.hotels-section-list{
+    display: flex;
+    column-gap: 100px;
+}

@@ -56,6 +56,10 @@ const NavBar = () => {
             <Nav.Link href="/blog" style={style.link}>BLOG</Nav.Link>
             </Link>
 
+            <Link href="/places/[place_name].js">
+            <Nav.Link href="/places/[place_name].js" style={style.link}>Places</Nav.Link>
+            </Link>
+
             <Nav.Link href="#pricing"style={style.link}>CONTACT US</Nav.Link>
             </Nav>
             <Nav>
