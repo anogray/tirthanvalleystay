@@ -1,16 +1,32 @@
-import Carousel from "react-bootstrap/Carousel"
+// import Carousel from "react-bootstrap/Carousel"
 import NavBar from "../../components/NavBar";
 import PropertyPlace from "../../components/Places/PropertyPlace";
 import MapLocation from "../../components/Map/Map";
 import locations from "../../components/Map/locations.json";
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import { useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function PlaceVisited() {
 
     const intervalCarousel = 3500;
     const [open,showMap] = useState(false);
+    const [activeThumnail, setActiveThumbnail] = useState(false);
+
+    const imgArr=[{idx:0, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:0, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:1, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:2, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:3, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:4, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:5, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:6, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:7, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:8, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+    {idx:9, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
+        ]
 
 
 
@@ -18,8 +34,8 @@ export default function PlaceVisited() {
     return (
       <div className="main-page">
        <NavBar/>
-      hello
       <div className="place-body">
+
       <h3>Usha Tirthan Lodge</h3>
       {/* <script>
      { 
@@ -44,31 +60,43 @@ export default function PlaceVisited() {
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWdq5YF-UdqtFLX0E4NxRcBDep21q95Mo&callback=initMap&libraries=&v=weekly&channel=2"
       async
     ></script> */}
-      <Carousel>
-        <Carousel.Item interval={intervalCarousel}>
-          <img
-            className="d-block w-100"
-src="https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"
-            alt="Image One"
-          />
-          {/* <Carousel.Caption>
-            <h3>Label for first slide</h3>
-            <p>Sample Text for Image One</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item interval={intervalCarousel}>
-          <img
-            className="d-block w-100"
-src="https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"
-            alt="Image One"
-          />
-          {/* <Carousel.Caption>
-            <h3>Label for first slide</h3>
-            <p>Sample Text for Image One</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        
-      </Carousel>
+
+
+        {/* <Carousel>
+              {imgArr.map((ele,idx)=>{
+                      console.log("thisisIdx",ele.idx)
+                        return <Carousel.Item interval={intervalCarousel}>
+                          <img
+                            className="d-block w-100"
+                              src={ele.src}
+                            alt="Image One"
+                          />
+                        </Carousel.Item>   
+
+              }
+              )
+            }
+        </Carousel> */}
+
+        <Carousel selectedItem={6} autoPlay interval={intervalCarousel}>
+        {imgArr.map((ele,idx)=> <div>
+                    <img src={ele.src} width="100px"/>
+                    {/* <p className="legend">Legend 1</p> */}
+                  </div>
+                  )
+
+                  
+        }
+            </Carousel>
+
+
+
+      {/* <div className="img-list-scroll">
+              
+              {
+                imgArr.map((ele)=><img className={`thumnbnail active-thumbnail`} src={ele.src} width="100px"/>)
+              }
+        </div> */}
 
       <PropertyPlace/>
       {/* <div id="map"></div> */}

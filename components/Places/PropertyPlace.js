@@ -19,97 +19,30 @@ export default function PropertyPlace() {
    <div className="facility-body">
       
     <h4>Facilities</h4>
-    <section className="hotel-facilities" id="hp_facilities_box" data-et-view="">
+    {/* <div className="hotel-facilities" id="hp_facilities_box" data-et-view=""> */}
                 
-                <div className="container hotels-section-list">
+                <div className="row container hotels-section-list">
 
-                    {/* <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Bathroom
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Bathroom
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div> */}
-                    <div className="row">
-                    {Object.keys(objEntities).map((key)=> <div className="col-sm hotel-facilty-each" key={key}>
-                        <div className=" place-heading">
-                        {key}
-                        </div>
-                       { 
-                           objEntities[key].map((ele,idx)=><ul className="list-details" key={idx}>
-                            <li className="facility-point">{ele}</li>
-                        </ul>)
-                        }
-                    </div>
+                    {Object.keys(objEntities).map((key)=> 
+                        <Card style={{ width: "200px" }}>
+                            <Card.Body>
+                                    <Card.Subtitle className="mb-2 text-muted facility-text">{key}</Card.Subtitle>
+                                    <Card.Title className="facility-text facility-list">{
+                                        objEntities[key].map((ele,idx)=>
+                                        <ul className="list-details" key={idx}>
+                                        <li className="facility-point">{ele}</li>
+                                        </ul>)
+                                        
+                                        }
+                                    </Card.Title>
+                                    {/* <Card.Text>
+                                    Tirthan Valley </Card.Text> */}
+                            </Card.Body>
+                        </Card>
                     )}
-                    </div>
-                    {/* <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Activities
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Entertainment and family services
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Bathroom
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Activities
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Entertainment and family services
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div>
-                    <div className="hotel-facilty-each">
-                        <div className="place-heading">
-                        Entertainment and family services
-                        </div>
-                        <ul className="list-details">
-                            <li className="facility-point">One</li>
-                            <li className="facility-point">One</li>
-                        </ul>
-                    </div> */}
+                    
                 </div>
-       </section>
+       {/* </div> */}
         
         </div>
     </>

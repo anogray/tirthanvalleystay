@@ -31,6 +31,10 @@ body{
 
 .hotels-section-list{
   display: block;
+  margin: 0px !important;
+  justify-content: center !important;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .facility-body{
@@ -38,6 +42,20 @@ body{
 }
 .facility-body h4{
   text-align: center;
+}
+
+.facility-text{
+  font-size: 10px !important;
+}
+.facility-list{
+  margin-left: -18px
+}
+
+.list-details{
+  margin: 0px;
+}
+.facility-point{
+  margin: 0px;
 }
 
 .hotel-facilities {
@@ -51,7 +69,12 @@ body{
 /* place page */
 .place-body{
   width: 50%;
-    margin: auto;
+  margin: auto;
+  margin-top: 8%;
+}
+.place-body h3{
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 /* place components */
@@ -65,6 +88,28 @@ body{
   width: 100%;
 }
 
+/* mapLocation */
+.map-place-location{
+  margin-top: 10%;
+}
+
+/* img scroll-list */
+.img-list-scroll{
+  margin-top: 1%;
+    display: flex;
+    overflow: scroll;
+}
+.thumnbnail{
+  margin: 0 5px;
+}
+.carousel-status{
+  display: none;
+}
+
+.active-thumbnail{
+  border: 3px solid #476ff1;
+}
+
 @media screen and (max-width: 900px){
   .place-body{
     width: 80%;
@@ -72,17 +117,17 @@ body{
 }
 
 @media screen and (max-width : 500px) {
-  .hotels-section-list{
+  /* .hotels-section-list{
     font-size: 12px;
-  }
+  } */
   .place-heading{
     margin-left: 30px;
   }
   
-.hotels-section-list{
+/* .hotels-section-list{
   grid-template-columns: repeat(1, 1fr) !important;
   grid-auto-rows: max-content;
-}
+} */
 .map-place-location{
   /* width: 80%; */
 }
