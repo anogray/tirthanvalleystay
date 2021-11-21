@@ -18,19 +18,6 @@ export default function PlaceVisited() {
     const [open,showMap] = useState(false);
     const [activeThumnail, setActiveThumbnail] = useState(false);
 
-    const imgArr=[{idx:0, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:0, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:1, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:2, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:3, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:4, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:5, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:6, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:7, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:8, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-    {idx:9, src:"https://tirthanvalleydev.s3.ap-south-1.amazonaws.com/senior/usha/IMG-20201230-WA0014.jpg"},
-        ]
-
     const router = useRouter();
     const propProperty = router.query;
     const [property, setProperty] = useState(null);

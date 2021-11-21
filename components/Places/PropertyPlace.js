@@ -59,7 +59,7 @@ export default function PropertyPlace({details}) {
                 <div className="row container hotels-section-list">
 
                     {Object.keys(details.facilities).map((key)=> 
-                        <Card style={{ width: "200px" }}>
+                        <Card className="facility-card">
                             <Card.Body>
                                     <Card.Subtitle className="mb-2 text-muted facility-text">{key}</Card.Subtitle>
                                     <Card.Title className="facility-text facility-list">{

@@ -66,6 +66,11 @@ body{
 
 }
 
+/* Card facilities*/
+.facility-card{
+width: 250px;
+}
+
 /* place page */
 .place-body{
   width: 50%;
@@ -137,7 +142,7 @@ body{
 }
 .loader{
   text-align: center;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 
 @media screen and (max-width: 900px){
