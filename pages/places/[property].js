@@ -69,11 +69,11 @@ export default function PlaceVisited() {
     return (
       <div className="main-page">
        <NavBar/>
-       {/* {
+       {
          property==null ? (<div className="loader">
           <Loader/>
           </div> ) : <></>
-       } */}
+       }
 
      { property!=null && 
        <div className="place-body">
