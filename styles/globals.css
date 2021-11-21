@@ -92,6 +92,9 @@ body{
 .map-place-location{
   margin-top: 10%;
 }
+.location-img-container img{
+  width: 100%;
+}
 
 /* img scroll-list */
 .img-list-scroll{
@@ -108,6 +111,33 @@ body{
 
 .active-thumbnail{
   border: 3px solid #476ff1;
+}
+
+/* Loaders */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner-loader {
+  color:blue;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: -.125em;
+  border: .25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+.loading-position{
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 10%;
+}
+.loader{
+  text-align: center;
+  margin-top: 50%;
 }
 
 @media screen and (max-width: 900px){
