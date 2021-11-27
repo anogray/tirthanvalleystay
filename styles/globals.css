@@ -205,7 +205,7 @@ margin-bottom: 4%;
   }
   .type-head h3{
     font-size: 1.25rem !important;
-    margin-left: 5%;
+    margin-left: 0px
   }
   .property-title{
     font-size: medium !important;
@@ -235,7 +235,8 @@ margin-bottom: 4%;
   margin-left: 22%;
 }
 .type-head h3{
-  font-size: 1.25rem !important;
+  font-size: 1.0rem !important;
+  margin-left: 0px
 }
 .propertyCard{
   border: none !important;
