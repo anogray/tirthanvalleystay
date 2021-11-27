@@ -20,7 +20,8 @@ export default function PropertiesType() {
             if(propertyTypeProp.propertyType){
                 const getProperties = async()=>{
     
-                    const response = await axios.get(`http://localhost:4000/property/category?category=${propertyTypeProp.propertyType}`);
+                    // const response = await axios.get(`http://localhost:4000/property/category?category=${propertyTypeProp.propertyType}`);
+                    const response = await axios.get(`http://tirthanvalleybackend.herokuapp.com/property/category?category=${propertyTypeProp.propertyType}`);
                     console.log("responseTypeProperty",response.data);
                     setPropertyData(response.data.dataMessage);
                     // const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propertyType.propertyType}`);
