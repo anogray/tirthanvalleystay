@@ -145,6 +145,40 @@ width: 250px;
   margin-top: 20%;
 }
 
+/* properties type page */
+
+.property-type-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.type-head{
+  text-align: center;
+}
+
+.properties-cards{
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 10%; */
+  justify-content: center;
+}
+.propertyCard{
+margin-right: 100px;
+margin-top: 5%;
+width: 300px !important;
+height: 200px !important;
+}
+.property-card-img{
+  max-height: 100%;
+}
+.property-card-text{
+  /* border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem; */
+}
+.property-title{
+  text-align: center;
+}
+
 @media screen and (max-width: 900px){
   .place-body{
     width: 80%;

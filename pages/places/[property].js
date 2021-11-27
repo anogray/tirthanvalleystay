@@ -30,7 +30,6 @@ export default function PlaceVisited() {
               const getPropertyDetails = async() =>{
               // const response = await axios.get(`http://localhost:4000/property?propertyName=${propProperty.property}`);
               const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propProperty.property}`);
-              console.log("yesWeeeeeeeeeeee",response.data.dataMessage);
               if(response.data.errorMessage){
                router.push("/");
               }

@@ -27,7 +27,7 @@ const NavBar = () => {
     return (
     <div>
         <Navbar collapseOnSelect expand="lg" style={style.navbar } sticky="bottom" className="navbar" >
-        <Navbar.Brand href="#home" style={style.link}>React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" style={style.link}>TirthanValley</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
@@ -49,8 +49,14 @@ const NavBar = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#features" style={style.link}>HOW TO REACH</Nav.Link>
-            <Nav.Link href="/blog" style={style.link}>WHERE TO STAY</Nav.Link>
+            {/* <Nav.Link href="#features" style={style.link}>HOW TO REACH</Nav.Link> */}
+            <NavDropdown title="WHERE TO STAY" id="collasible-nav-dropdown" style={style.link}>
+                <NavDropdown.Item href={`/placestolive/senior`}>Senior Citizen Friendly</NavDropdown.Item>
+                {/* <NavDropdown.Item href={`/placestolive/deluxe`}>Deluxe </NavDropdown.Item> */}
+                <NavDropdown.Item href={`/placestolive/superDeluxe`}>Super Deluxe </NavDropdown.Item>
+                <NavDropdown.Item href={`/placestolive/luxury`}>Luxury</NavDropdown.Item>
+            </NavDropdown>
+            {/* <Nav.Link href="/blog" style={style.link}>WHERE TO STAY</Nav.Link> */}
             
             <Link href="/blog">
             <Nav.Link href="/blog" style={style.link}>BLOG</Nav.Link>
