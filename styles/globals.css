@@ -201,7 +201,7 @@ margin-bottom: 4%;
 
   .properties-cards{
     row-gap: 50px;
-    margin-left: 22%;
+    /* margin-left: 22%; */
   }
   .type-head h3{
     font-size: 1.25rem !important;
@@ -232,7 +232,8 @@ margin-bottom: 4%;
 }
 .properties-cards{
   row-gap: 50px;
-  margin-left: 22%;
+  column-gap: 100px;
+  /* margin-left: 22%; */
 }
 .type-head h3{
   font-size: 1.0rem !important;
