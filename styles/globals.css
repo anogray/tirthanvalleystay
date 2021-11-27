@@ -168,6 +168,8 @@ margin-right: 100px;
 margin-top: 5%;
 width: 300px !important;
 height: 200px !important;
+margin-bottom: 4%;
+
 }
 .property-card-img{
   max-height: 100%;
@@ -187,6 +189,16 @@ height: 200px !important;
   .property-type-container{
     
   }
+  .propertyCard{
+    border: none !important;
+    background-color: transparent !important;
+    margin-bottom: 0px;
+  }
+  .propertyCard .card-body{
+    background-color: transparent !important;
+    border: none !important;
+  }
+
   .properties-cards{
     row-gap: 50px;
     margin-left: 22%;
@@ -194,6 +206,9 @@ height: 200px !important;
   .type-head h3{
     font-size: 1.25rem !important;
     margin-left: 5%;
+  }
+  .property-title{
+    font-size: medium !important;
   }
   
 }
@@ -221,6 +236,19 @@ height: 200px !important;
 }
 .type-head h3{
   font-size: 1.25rem !important;
+}
+.propertyCard{
+  border: none !important;
+  background-color: transparent !important;
+  margin-bottom: 0px;
+}
+
+.propertyCard .card-body{
+  background-color: none !important;
+  border: none !important;
+}
+.property-title{
+  font-size: medium !important;
 }
 
 }
