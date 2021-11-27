@@ -154,6 +154,7 @@ width: 250px;
 }
 .type-head{
   text-align: center;
+  margin-left: 5%;
 }
 
 .properties-cards{
@@ -183,6 +184,18 @@ height: 200px !important;
   .place-body{
     width: 80%;
   }
+  .property-type-container{
+    
+  }
+  .properties-cards{
+    row-gap: 50px;
+    margin-left: 22%;
+  }
+  .type-head h3{
+    font-size: 1.25rem !important;
+    margin-left: 5%;
+  }
+  
 }
 
 @media screen and (max-width : 500px) {
@@ -199,6 +212,15 @@ height: 200px !important;
 } */
 .map-place-location{
   /* width: 80%; */
+}
+.property-type-container{
+}
+.properties-cards{
+  row-gap: 50px;
+  margin-left: 22%;
+}
+.type-head h3{
+  font-size: 1.25rem !important;
 }
 
 }
