@@ -11,6 +11,9 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/router'
 import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
+import { domainType } from "../../components/util";
+import Footer from "../../components/Footer/Footer";
+import Weather from "../../components/Footer/Weather";
 
 export default function PlaceVisited() {
 
@@ -22,14 +25,17 @@ export default function PlaceVisited() {
     const propProperty = router.query;
     const [property, setProperty] = useState(null);
 
+
+   
     useEffect(() => {
       try{
           if(propProperty.property){
               console.log("gotParams",propProperty.property);
 
               const getPropertyDetails = async() =>{
+              const response = await axios.get(domainType(propProperty.property));
               // const response = await axios.get(`http://localhost:4000/property?propertyName=${propProperty.property}`);
-              const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propProperty.property}`);
+              // const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propProperty.property}`);
               if(response.data.errorMessage){
                router.push("/");
               }
@@ -87,6 +93,8 @@ export default function PlaceVisited() {
       </div>
       </div>
       }
+      <Weather/>
+      {/* <Footer/> */}
     </div>
     )
   }
