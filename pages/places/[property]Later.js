@@ -16,48 +16,46 @@ import { domainType } from "../../components/util";
 import Footer from "../../components/Footer/Footer";
 import Weather from "../../components/Footer/Weather";
 
-export default function PlaceVisited({propertyDetails}) {
+export default function PlaceVisited() {
 
-   // console.log("fromserverside propertyDetails",property);
-    const property = propertyDetails.dataMessage;
     const intervalCarousel = 3500;
     const [open,showMap] = useState(false);
     const [activeThumnail, setActiveThumbnail] = useState(false);
 
     const router = useRouter();
     const propProperty = router.query;
-    // const [property, setProperty] = useState(null);
-    
+    const [property, setProperty] = useState(null);
+
 
    
-  //   useEffect(() => {
-  //     try{
-  //         if(propProperty.property){
-  //             console.log("gotParams",propProperty.property);
+    useEffect(() => {
+      try{
+          if(propProperty.property){
+              console.log("gotParams",propProperty.property);
 
-  //             const getPropertyDetails = async() =>{
-  //             const response = await axios.get(domainType(propProperty.property));
-  //             // const response = await axios.get(`http://localhost:4000/property?propertyName=${propProperty.property}`);
-  //             // const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propProperty.property}`);
-  //             if(response.data.errorMessage){
-  //              router.push("/");
-  //             }
-  //             console.log("gotResponse",response.data.dataMessage);
-  //             setProperty(response.data.dataMessage)
-  //             }
-  //             getPropertyDetails();
+              const getPropertyDetails = async() =>{
+              const response = await axios.get(domainType(propProperty.property));
+              // const response = await axios.get(`http://localhost:4000/property?propertyName=${propProperty.property}`);
+              // const response = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${propProperty.property}`);
+              if(response.data.errorMessage){
+               router.push("/");
+              }
+              console.log("gotResponse",response.data.dataMessage);
+              setProperty(response.data.dataMessage)
+              }
+              getPropertyDetails();
 
-  //         }
+          }
 
-  //     }catch(err){
-  //         console.log("errorPage directProperty",err.response);
-  //         router.push("/");
-  //     }
+      }catch(err){
+          console.log("errorPage directProperty",err.response);
+          router.push("/");
+      }
       
-  //     return () => {
+      return () => {
           
-  //     };
-  // }, [propProperty?.property])
+      };
+  }, [propProperty?.property])
   
   console.log("seeThe",property);
 
@@ -104,17 +102,3 @@ export default function PlaceVisited({propertyDetails}) {
     </div>
     )
   }
-
-  export async function getServerSideProps({ params }) {
-    // console.log("checkParams getServerSideProps", params.property);
-    // const affiliationId = params.affiliationId.replace(/\-/g, '+')
-    // const characters = await axios.get(`https://last-airbender-api.herokuapp.com/api/v1/characters?affiliation=${affiliationId}`).then(res => res.json());
-    // const propertyDetails = await axios.get(domainType(params.property));
-    const propertyDetails = await axios.get(`https://tirthanvalleybackend.herokuapp.com/property?propertyName=${params.property}`);
-     //console.log(propertyDetails.data);
-    return {
-      props: {
-        propertyDetails:propertyDetails.data
-      }
-    }
-  }  
