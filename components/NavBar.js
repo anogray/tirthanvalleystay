@@ -51,10 +51,16 @@ const NavBar = () => {
             </NavDropdown>
             {/* <Nav.Link href="#features" style={style.link}>HOW TO REACH</Nav.Link> */}
             <NavDropdown title="WHERE TO STAY" id="collasible-nav-dropdown" style={style.link}>
-                <NavDropdown.Item href={`/placestolive/senior`}>Senior Citizen Friendly</NavDropdown.Item>
+                {/* <NavDropdown.Item href={`/placestolive/senior`}>Senior Citizen Friendly</NavDropdown.Item> */}
+                <NavDropdown.Item><Link href="/placestolive/[propertyType]" as={`/placestolive/senior`}>Senior Citizen Friendly</Link></NavDropdown.Item>
                 {/* <NavDropdown.Item href={`/placestolive/deluxe`}>Deluxe </NavDropdown.Item> */}
-                <NavDropdown.Item href={`/placestolive/superDeluxe`}>Super Deluxe </NavDropdown.Item>
-                <NavDropdown.Item href={`/placestolive/luxury`}>Luxury</NavDropdown.Item>
+                {/* <NavDropdown.Item href={`/placestolive/superDeluxe`}>Super Deluxe </NavDropdown.Item> */}
+                {/* <NavDropdown.Item><Link href="/placestolive/[propertyType]" as={`/placestolive/deluxe`}>Deluxe</Link></NavDropdown.Item> */}
+                <NavDropdown.Item><Link href="/placestolive/[propertyType]" as={`/placestolive/superDeluxe`}>Super Deluxe</Link></NavDropdown.Item>
+
+                {/* <NavDropdown.Item href={`/placestolive/luxury`}>Luxury</NavDropdown.Item> */}
+                <NavDropdown.Item><Link href="/placestolive/[propertyType]" as={`/placestolive/luxury`}>Luxury</Link></NavDropdown.Item>
+
             </NavDropdown>
             {/* <Nav.Link href="/blog" style={style.link}>WHERE TO STAY</Nav.Link> */}
             

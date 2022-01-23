@@ -18,7 +18,7 @@ import Weather from "../../components/Footer/Weather";
 
 export default function PlaceVisited({propertyDetails}) {
 
-   // console.log("fromserverside propertyDetails",property);
+   console.log("fromserverside propertyDetails",propertyDetails);
     const property = propertyDetails.dataMessage;
     const intervalCarousel = 3500;
     const [open,showMap] = useState(false);
@@ -106,7 +106,7 @@ export default function PlaceVisited({propertyDetails}) {
   }
 
   export async function getServerSideProps({ params }) {
-    // console.log("checkParams getServerSideProps", params.property);
+    console.log("checkParams getServerSideProps", params);
     // const affiliationId = params.affiliationId.replace(/\-/g, '+')
     // const characters = await axios.get(`https://last-airbender-api.herokuapp.com/api/v1/characters?affiliation=${affiliationId}`).then(res => res.json());
     // const propertyDetails = await axios.get(domainType(params.property));

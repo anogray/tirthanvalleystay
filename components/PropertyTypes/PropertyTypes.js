@@ -12,6 +12,7 @@ export default function PropertyTypes(props){
     },[])
 
     const handleProperty = (property)=>{
+        console.log("thatswhy", property.placeName);
         router.push(`../places/${property.placeName}`)
     }
 
