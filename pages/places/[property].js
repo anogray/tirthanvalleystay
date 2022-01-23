@@ -1,5 +1,6 @@
 // import Carousel from "react-bootstrap/Carousel"
 import NavBar from "../../components/NavBar";
+import Head from "next/head";
 import PropertyPlace from "../../components/Places/PropertyPlace";
 import MapLocation from "../../components/Map/Map";
 import locations from "../../components/Map/locations.json";
@@ -61,6 +62,9 @@ export default function PlaceVisited() {
 
     return (
       <div className="main-page">
+      <Head>
+        <title>{property?.fullName || ""}</title>
+      </Head>
        <NavBar/>
        {
          property==null ? (<div className="loader">
