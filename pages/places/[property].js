@@ -17,6 +17,7 @@ import Footer from "../../components/Footer/Footer";
 import Weather from "../../components/Footer/Weather";
 
 export default function PlaceVisited({propertyDetails}) {
+  console.log("weFirst");
 
    console.log("fromserverside propertyDetails",propertyDetails);
     const property = propertyDetails.dataMessage;
@@ -26,6 +27,15 @@ export default function PlaceVisited({propertyDetails}) {
 
     const router = useRouter();
     const propProperty = router.query;
+
+    useEffect(()=>{
+console.log("weSecond");
+      const resp = async()=>{
+        const gotResp = await axios.get("https://jsonplaceholder.typicode.com/posts");
+        console.log(gotResp.data);
+      }
+      resp();
+    },[])
     // const [property, setProperty] = useState(null);
     
 

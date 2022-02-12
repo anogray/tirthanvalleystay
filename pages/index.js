@@ -13,8 +13,13 @@ export default function Home() {
 
 
   return (
+    <>
+    <Head>
+    <meta name="google-site-verification" content="sC67vD_yE2XXipIp7olx6Jw-AnCzcC_nwinfTmbgrfQ" />
+    </Head>
     <div className="main-page">
     <NavBar/>
   </div>
+  </>
   )
 }
